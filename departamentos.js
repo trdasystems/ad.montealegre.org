@@ -1,0 +1,11 @@
+(function(){var T=[
+"A UAADMA acolhe os adolescentes da igreja em um ambiente alegre e seguro, onde eles aprendem a Palavra de Deus, fazem amizades verdadeiras e descobrem como viver a fé desde cedo. Por meio de estudos, atividades e momentos de comunhão, os adolescentes são incentivados a crescer em caráter e a servir ao Senhor.",
+"A UMADMA reúne os jovens da igreja para adorar, estudar a Bíblia e servir. Com louvor, comunhão e compromisso com a obra de Deus, a mocidade se prepara para ser luz na família, na igreja e na sociedade.",
+"A USEADMA, os Arautos do Rei, reúne os homens da igreja em torno da Palavra, da oração e do serviço. Seu propósito é fortalecer a fé, a comunhão e a liderança cristã dos senhores, abençoando suas famílias e a obra de Deus em Monte Alegre.",
+"O Departamento de Anciões reúne os anciões que servem à igreja com cuidado, conselho e exemplo. Seu lema é servir a Deus, ao Seu povo e à Sua obra, conforme 1 Pedro 5:2, apoiando a liderança e acompanhando de perto a vida da igreja.",
+"O Círculo de Oração Heroínas de Cristo reúne as irmãs da igreja para orar, interceder e crescer juntas na fé. É um espaço de comunhão e fortalecimento espiritual, onde a oração sustenta famílias, a igreja e a obra de Deus.",
+"A UCADMA ensina as crianças das Assembleias de Deus de Monte Alegre a conhecer a Bíblia e a amar a Jesus desde pequenas. Com atividades, histórias e muita alegria, ela ajuda a formar a nova geração da igreja nos caminhos do Senhor."];
+var d=document.getElementById('dm');function op(c,i){d.querySelector('#dmi').src=c.querySelector('img').src;d.querySelector('#dmi').alt=c.querySelector('img').alt;d.querySelector('#dml').textContent=c.querySelector('small').textContent;d.querySelector('#dmt').textContent=c.querySelector('h3').textContent;d.querySelector('#dmf').textContent=c.querySelector('p').textContent;d.querySelector('#dmd').textContent=T[i]||'';d.showModal()}
+document.querySelectorAll('#dep .dep').forEach(function(c,i){c.tabIndex=0;c.setAttribute('role','button');c.insertAdjacentHTML('beforeend','<em class="mo">Saiba mais &rarr;</em>');c.onclick=function(){op(c,i)};c.onkeydown=function(e){if(e.key=='Enter'||e.key==' '){e.preventDefault();op(c,i)}}});
+d.querySelectorAll('.dm-x,.dm-b').forEach(function(b){b.onclick=function(){d.close()}});d.onclick=function(e){if(e.target===d)d.close()};
+})();
